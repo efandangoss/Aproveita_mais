@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha - Aproveita+</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .header a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 16px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 12x;
+        }
+        button {
+            background-color: #457140;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838; 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><u>Voltar</u></a>
+    </div>
+    <div class="container">
+            <div class="logo">
+                <img src="resources/img/logoaproveita+.png" width="126px">
+        <p><b>Esqueci minha senha</b></p>
+        <p>Para redefinir sua senha, informe o e-mail cadastrado na sua conta e lhe enviaremos um link com as instruções.</p>
+        <input type="email" placeholder="Email" required>
+        <button onclick="mostrarAlerta()">Enviar link de recuperação</button>
+
+    <script>
+        function mostrarAlerta() {
+            alert("Senha Recuperada!");
+        }
+    </script>
+    </div>
+</body>
+</html>
